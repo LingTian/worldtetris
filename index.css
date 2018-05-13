@@ -1,0 +1,163 @@
+body {
+    /*box-sizing: border-box;*/
+    margin: 0;
+    padding: 0;
+    background: url('img/bg.png') repeat;
+}
+.wrap {
+    position: absolute;
+    left: 50%;
+    top: 49px;
+    width: 385px;
+    height: 547px;
+    margin-left: -193px;
+    /*box-shadow: 0px 0px 5px 5px rgba(255,125,0, 0.6);*/
+}
+
+.wrap div {
+    position: absolute;
+}
+.wrap .now {
+    left: 0;
+    top: 0;
+    width: 261px;
+    height: 547px;
+    background-color: rgba(255,255,255, 0.5);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.8);
+}
+.wrap .next {
+    right: 0;
+    top: 0;
+    width: 105px;
+    height: 105px;
+    background-color: rgba(255,255,255, 0.5);
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.6);
+}
+.wrap .score,
+.wrap .lines,
+.wrap .level,
+.wrap .pause,
+.wrap .refresh {
+    left: 280px;
+    top: 150px;
+    width: 99px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 6px;
+    color: #F0907A;
+    /*font-weight: bold;*/
+    border: 0 none;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.8);
+}
+.wrap .lines {
+    top: 200px;
+    color: #4DAEDD;
+}
+.wrap .level {
+    top: 250px;
+    color: #FF0033;
+}
+.wrap .pause,
+
+.wrap .refresh {
+    top: 350px;
+    width: 105px;
+    padding-left: 0px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.wrap .pause:hover,
+.wrap .refresh:hover {
+    background-color: rgba(0,0,0, 0.8);
+}
+.wrap .refresh {
+    top: 450px;
+}
+.wrap .tips {
+    display: none;
+    left: 0px;
+    top: 150px;
+    width: 261px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 0px 0px 5px #0F0;
+    z-index: 2;
+}
+.wrap_prompt {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+.wrap_prompt .prompt {
+    position: absolute;
+    left: 50%;
+    top: 220px;
+    width: 221px;
+    height: 137px;
+    margin-left: -172px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 6;
+}
+.wrap_prompt .prompt div {
+    width: 51px;
+    height: 51px;
+    line-height: 51px;
+    margin-left: 85px;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+.wrap_prompt .prompt .failed,
+.wrap_prompt .prompt .restart {
+    display: block;
+    color: #f00;
+    line-height: 40px;
+    text-align: center;
+}
+.wrap_prompt .prompt .restart {
+    width: 121px;
+    margin-left: 50px;
+    color: #646464;
+    background: yellow;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#box {
+    position: relative;
+    width: 385px;
+    height: 547px;
+    margin: 50px auto;
+}
+#box div {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    /*border: 1px solid #000;*/
+    transform: rotate(0);
+    transition: 0.25s;
+}
+#box .clDiv{
+    transition: 1s !important;
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+    width: 12.5px !important;
+    height: 12.5px !important;
+    border: none !important;
+    }
+
+

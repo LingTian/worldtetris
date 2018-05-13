@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+            <title>俄罗斯方块:联盟</title>
+		<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+        <script src="nebPay.js"></script>
+        <script src="layer/layer.js"></script>
+		   <link rel="stylesheet" href="index.css">
+                  <div id="walletcheck"></div>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="tips">Good!</div>
+			<div class="now"></div>
+			<div class="next"></div>
+			<div class="score">SCORE: <span>0</span></div>
+			<div class="lines">LINES: <span>0</span></div>
+			<div class="level">LEVEL: <span>0</span></div>
+			<div class="pause" id="start" onclick="startnewtetris()">开始</div>
+  
+			<div class="refresh" onclick="worldstat()">世界数据</div>
+		</div>
+        
+        
+		<div class="wrap_prompt">
+			<div class="prompt">
+				<div>×</div>
+				<span class="failed">游戏失败</span>
+				<span class="restart" onclick="savescore()">上传得分</span>
+			</div>
+		</div>
+        <script src="index.js">
+            
+            </script>
+    </body>
+</html>
